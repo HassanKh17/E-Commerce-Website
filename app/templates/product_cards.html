@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<body>
+    {% for product in products %}
+    <div class="product-card">
+        <h2>{{ product.name }}</h2>
+        {% if product.image_filename %}
+        <img src="{{ url_for('static', filename='images/' + product.image_filename) }}" alt="{{ product.name }} Image">
+        {% else %}
+        <p>No image available</p>
+        {% endif %}
+        <h3>Price: £{{ product.price }}</h3>
+        <p>{{ product.description }}</p>
+        {% for quan in product.stock%}
+        {% if quan.quantity > 0 %}
+        <form method="post" class="buttonForm1" action="{{ url_for('cart_addition', product_id=product.id) }}">
+            <button type="submit">Add to cart</button>
+        </form>
+        {% else %}
+        <button type="disabled-button" disabled>Out of Stock</button>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
+{% endblock %}

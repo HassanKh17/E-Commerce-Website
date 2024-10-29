@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<head>
+    <title>Login Form</title>
+</head>
+{% endblock %}
+
+{% block body %}
+
+
+
+<body>
+    <div class="navbar">
+        <div class="inner-nav">
+            <a class="bx bx-user-plus" href="{{ url_for('register') }}">Register</a>
+            <a class="bx bxs-home" href="{{ url_for('index') }}">Home</a>
+            <a class="bx bxs-store" href="{{ url_for('products') }}">Store</a>
+            <a class="bx bxs-cart" href="{{ url_for('cart') }}">Cart</a>
+        </div>
+    </div>
+    <form class="loginForm" action="{{url_for('login')}}" method="POST">
+        <h2>Login Form</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+</body>
+{% endblock %}

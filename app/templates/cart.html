@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<head>
+    <title>Cart</title>
+</head>
+
+{% endblock %}
+
+{% block body %}
+{% if current_user.is_authenticated %}
+<div class="navbar">
+    <p class="bx bx-user-circle"> {{current_user.username}}</p>
+    <div class="inner-nav">
+        <a class="bx bxs-log-out" href="{{ url_for('logout') }}">Logout</a>
+        <a class="bx bxs-home" href="{{ url_for('index') }}">Home</a>
+        <a class="bx bxs-store" href="{{ url_for('products') }}">Store</a>
+        <a class="bx bxs-shopping-bag" href="{{ url_for('order') }}">Orders</a>
+    </div>
+</div>
+{% else %}
+<div class="navbar">
+    <p class="bx bx-user-circle"> Guest</p>
+    <div class="inner-nav">
+        <a class="bx bxs-home" href="{{ url_for('index') }}">Home</a>
+        <a class="bx bxs-store" href="{{ url_for('products') }}">Store</a>
+        <a class="bx bxs-log-in" href="{{ url_for('login') }}">Login</a>
+        <a class="bx bx-user-plus" href="{{ url_for('register') }}">Register</a>
+    </div>
+</div>
+{% endif %}
+
+<body>
+    <div class="container-this">
+        <div class="tableContainer">
+            <h2>Your Cart</h2>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Image</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for product_id , quantity in cart.items() %}
+                    <tr>
+                        <td>{{ productlist[product_id].name }}</td>
+                        <td>£{{ productlist[product_id].price}}</td>
+                        <td>{{ quantity }}</td>
+                        <td>{% if productlist[product_id].image_filename %}
+                            <img src="{{ url_for('static', filename='images/' + productlist[product_id].image_filename) }}"
+                                alt="{{ productlist[product_id].name }} Image">
+                            {% else %}
+                            <p>No image available</p>
+                            {% endif %}
+                        </td>
+                        <td>£{{ quantity * productlist[product_id].price }}</td>
+                        <td>
+                            <form method="POST" class="buttonForm"
+                                action="{{ url_for('cart_subtraction', product_id=product_id) }}"
+                                style="display:inline;">
+                                <button type="submit" class='bx bx-minus-circle'
+                                    onclick="return confirm('Are you sure you want to remove this item?')"></button>
+                            </form>
+                            <form method="POST" class="buttonForm"
+                                action="{{url_for('cart_addition',product_id=product_id)}}" style="display:inline;">
+                                <button type="submit" class='bx bx-plus-circle'
+                                    onclick="return confirm('Are you sure you want to add this item?')"></button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total:</td>
+                        <td>£{{ total_cart_amount }}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    {% if current_user.is_authenticated %}
+    <form class="buttonFormLogin" action="{{ url_for('checkout') }}" method="post">
+        <button type="submit" class="bx bx-check-shield">Checkout</button>
+    </form>
+    {%else%}
+    <form class="buttonFormLogin" action="{{ url_for('login') }}" method="get">
+        <button type="submit" class="bx bxs-log-in">Login & Checkout</button>
+    </form>
+    {% endif %}
+
+</body>
+{% endblock %}

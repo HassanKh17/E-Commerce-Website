@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<head>
+    <title>Wish list</title>
+</head>
+{% endblock %}
+
+{% block body %}
+<h1>Your Wish List</h1>
+
+<div class="product-container">
+    {% for product_id in wishList.items() %}
+    <div class="product-card">
+        <h2>{{ wishlist_products[product_id].name }}</h2>
+        <p>Price: ${{ wishlist_products[product_id].price }}</p>
+        <p>{{ wishlist_products[product_id].description }}</p>
+        {% if wishlist_products[product_id].image_filename %}
+        <img src="{{ url_for('static', filename='images/' +  wishlist_products[product_id].image_filename) }}"
+            alt="{{  wishlist_products[product_id].name }} Image">
+        {% else %}
+        <p>No image available</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

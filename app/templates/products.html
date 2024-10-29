@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<head>
+    <title>Products</title>
+</head>
+{% endblock %}
+
+{% block body %}
+
+{% if current_user.is_authenticated %}
+<div class="navbar">
+    <p class="bx bx-user-circle"> {{current_user.username}}</p>
+    <div class="inner-nav">
+        <a class="bx bxs-log-out" href="{{ url_for('logout') }}">Logout</a>
+        <a class="bx bxs-home" href="{{ url_for('index') }}">Home</a>
+        <a class="bx bxs-cart" href="{{ url_for('cart') }}">Cart</a>
+        <a class="bx bxs-shopping-bag" href="{{ url_for('order') }}">Orders</a>
+    </div>
+</div>
+{% else %}
+<div class="navbar">
+    <p class="bx bx-user-circle"> Guest</p>
+    <div class="inner-nav">
+        <a class="bx bxs-home" href="{{ url_for('index') }}">Home</a>
+        <a class="bx bxs-log-in" href="{{ url_for('login') }}">Login</a>
+        <a class="bx bx-user-plus" href="{{ url_for('register') }}">Register</a>
+        <a class="bx bxs-cart" href="{{ url_for('cart') }}">Cart</a>
+    </div>
+</div>
+{% endif %}
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for products">
+    <div class="filter-container">
+        <button onclick="sortProducts('price_high')">Sort by Price (High to Low)</button>
+        <button onclick="sortProducts('price_low')">Sort by Price (Low to High)</button>
+        <div class="category-filter">
+            <select class="filter-this" id="categoryFilter" onchange="filterProductsByCategory()">
+                <option value="all">Choose a category</option>
+                <option value="all">All Categories</option>
+                <option value="bat">Bats</option>
+                <option value="helmet">Helmets</option>
+                <option value="gloves">Gloves</option>
+                <option value="shoes">Shoes</option>
+                <option value="bags">Bags</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+<div id="productContainer" class="product-container">
+    {% for product in products %}
+    <div class="product-card">
+        <h2>{{ product.name }}</h2>
+        {% if product.image_filename %}
+        <img src="{{ url_for('static', filename='images/' + product.image_filename) }}" alt="{{ product.name }} Image">
+        {% else %}
+        <p>No image available</p>
+        {% endif %}
+        <h3>£{{ product.price }}</h3>
+        {% for quan in product.stock%}
+        {% if quan.quantity > 0 %}
+        <form method="post" class="buttonForm1" action="{{ url_for('cart_addition', product_id=product.id) }}">
+            <button type="submit">Add to cart</button>
+        </form>
+        {% else %}
+        <button type="disabled-button" disabled>Out of Stock</button>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+<script>
+    //JavaScript for handling the search bar and displaying results
+    $(document).ready(function () {
+        function updateProductContainer(htmlContent) {
+            $('#productContainer').html(htmlContent);
+        }
+
+        $('#searchInput').on('keyup', function () {
+            var query = $(this).val();
+
+            $.ajax({
+                url: '/search',
+                type: 'GET',
+                data: { query: query },
+                success: function (data) {
+                    updateProductContainer(data.html);
+                }
+            });
+        });
+    });
+</script>
+</body>
+{% endblock %}

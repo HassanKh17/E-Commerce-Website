@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    {% block head %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static',filename='javascript/script.js')}}"></script>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <!-- Centered overlay container -->
+    <div class="overlay-container" id="overlayContainer">
+        <!-- Flash message modal code here -->
+        <div class="flash-modal" id="flashModal">
+            {% for message in messages %}
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Show the overlay and modal
+            $('#overlayContainer').css('visibility', 'visible');
+            $('#flashModal').fadeIn();
+
+            // Automatically close modal and hide overlay after 3 seconds
+            setTimeout(function () {
+                $('#flashModal').fadeOut(function () {
+                    // Hide the overlay and restore scrolling
+                    $('#overlayContainer').css('visibility', 'hidden');
+                    $('body').css('overflow', 'auto');
+                });
+            }, 3000);
+        });
+    </script>
+
+    {% endif %}
+    {% endwith %}
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Image">
+    <script src="{{ url_for('static',filename='javascript/script.js')}}"></script>
+
+    {% block body %} {% endblock %}
+</body>
+
+</html>

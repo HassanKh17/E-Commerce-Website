@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Image">
+
+{% if current_user.is_authenticated %}
+<div class="navbar">
+    <p class="bx bx-user-circle"> {{current_user.username}}</p>
+    <div class="inner-nav">
+        <a class="bx bxs-log-out" href="{{ url_for('logout') }}">Logout</a>
+        <a class="bx bxs-store" href="{{ url_for('products') }}">Store</a>
+        <a class="bx bxs-cart" href="{{ url_for('cart') }}">Cart</a>
+        <a class="bx bxs-shopping-bag" href="{{ url_for('order') }}">Orders</a>
+    </div>
+</div>
+{% else %}
+<div class="navbar">
+    <p class="bx bx-user-circle"> Guest</p>
+    <div class="inner-nav">
+        <a class="bx bxs-store" href="{{ url_for('products') }}">Store</a>
+        <a class="bx bxs-log-in" href="{{ url_for('login') }}">Login</a>
+        <a class="bx bx-user-plus" href="{{ url_for('register') }}">Register</a>
+        <a class="bx bxs-cart" href="{{ url_for('cart') }}">Cart</a>
+    </div>
+</div>
+
+{% endif %}
+<center>
+    <marquee behavior="alternate" direction="right">
+        <img src="{{ url_for('static', filename='images/batsBanner.jpg') }}" alt=" Banner Image">
+    </marquee>
+</center>
+
+<body>
+    <h1>Top Rated Products</h1>
+    <div id="productContainer" class="product-container">
+        {% for product in top_rated_products %}
+        <div class="product-card">
+            <h2>Rating: {{ product.average_rating|round(2) }}</h2>
+            <h2>{{ product.name }}</h2>
+            {% if product.image_filename %}
+            <img src="{{ url_for('static', filename='images/' + product.image_filename) }}"
+                alt="{{ product.name }} Image">
+            {% else %}
+            <p>No image available</p>
+            {% endif %}
+            <h3>Price: £{{ product.price }}</h3>
+            <p>{{ product.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>Top Selling Products</h1>
+    <div id="productContainer" class="product-container">
+        {% for product in most_sold_products %}
+        <div class="product-card">
+            <h2>Sold: {{ product.total_quantity_sold }}</h2>
+            <h2>{{ product.name }}</h2>
+            {% if product.image_filename %}
+            <img src="{{ url_for('static', filename='images/' + product.image_filename) }}"
+                alt="{{ product.name }} Image">
+            {% else %}
+            <p>No image available</p>
+            {% endif %}
+            <h3>Price: £{{ product.price }}</h3>
+            <p>{{ product.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+{% endblock %}
