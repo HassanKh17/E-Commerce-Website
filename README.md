@@ -6,23 +6,28 @@ https://leeds365-my.sharepoint.com/:v:/g/personal/sc22hkar_leeds_ac_uk/EVsQlcKRk
 
 ## Design
 The website boasts a contemporary aesthetic with a clean and modern design. The colour scheme, featuring `#f5f5f5` for the background and `#333` for the navigation bar has a contrast ratio of approximately 4.49:1 which meets the WCGA AA standards for normal text.
+
 ![image](https://github.com/user-attachments/assets/2ccfc37a-c9b6-460a-bc78-e14dbd2f0166)
 
 
 The placement of the navigation bar at the top and the positioning of icons in the top right corner have been carefully considered to optimize user experience and aesthetics.
 The top placement of the navbar ensures immediate visibility, drawing user attention to essential navigation elements. It also adheres to conventional design patterns, making it intuitive for users accustomed to standard web layouts.
+
 ![image](https://github.com/user-attachments/assets/80fe137f-8511-4e8d-b297-fef0338a4c77)
 
 
 The website incorporates a set of thoughtfully chosen icons, enhancing the overall aesthetics, and contributing a more intuitive user interface. Each icon is strategically placed to convey specific actions or information, promoting a seamless and visually engaging experience for users.
+
 ![image](https://github.com/user-attachments/assets/edeff686-dc86-4131-bc58-d2b5b36c0d64)
 
 
 The moving banner, achieved through `<marquee>` element, attracts immediate attention and adds a dynamic element to the web page. It enhances the visual appeal, providing users with a visually stimulating element.
+
 ![image](https://github.com/user-attachments/assets/ac4753f5-1b02-490f-b77f-abfead0c995a)
 
 
 The product cards maintain a consistent design, contributing to cohesive and professional look for the website. Each card includes essential details like product name, image, and price, ensuring users have quick access to relevant information.
+
 ![image](https://github.com/user-attachments/assets/45fc2c4f-d6ca-4661-b5ed-2d8a3015d9a0)
 
 
@@ -38,6 +43,7 @@ As now we want the user to be able to buy a product, a button is added at the bo
 If the product is in stock, the button has a solid background colour of `rgb(67, 147, 151)` as it aligns with the overall colour scheme of the website.
 The button transitions to a slightly lighter shade on hover; this crafty change adds a dynamic and interactive feel to the button.
 If the product is out of stock, the button has a muted background colour of `#ccc` indicating its disabled state.
+
 ![image](https://github.com/user-attachments/assets/cff09f23-0393-4cf9-b1d9-0e40790f276a)
 
 The colour choice effectively communicates that the button is inactive. The cursor style `not-allowed` visually presents that the button is not interactive. This is a standard convention for disabled elements on most websites.
