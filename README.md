@@ -58,12 +58,14 @@ The form’s rounded corners soften its edges, contributing to a more inviting a
 To keep the forms responsive, percentage-based width and margin properties are used.
 
 In the top left corner of each navbar, there is a profile icon with text next to it. If the user hasn’t logged in, it displays “Guest”. When a user logs in, it is replaced by the username of the user. This lets the user know if they have logged in or not and establishes a sense of identity and acknowledgement.
+
 ![image](https://github.com/user-attachments/assets/702fb9f9-8cfa-4f47-997c-ebc6dbde85ba) 
 ![image](https://github.com/user-attachments/assets/30a8a4da-6770-4a9b-9532-30c66bce3b69)
 
 
 
 The cart items are displayed in a table with the relevant fields. The colour scheme of the table is consistent with the website’s primary colours, creating a visually cohesive design. The application of black-box shadow enhances the container’s visual prominence.
+
 ![image](https://github.com/user-attachments/assets/e4041d6a-3f9d-43cc-b486-5160da14cf22)
 
 The semi-transparent background of table containers adds a touch of colour while allowing the underlying content to show through. The collapse borders provide a clean and seamless look.
@@ -72,21 +74,25 @@ To add more to the visual appeal of the table, alternating row colours are appli
 Furthermore, to elevate the user experience, a hover effect is applied to the rows of the table. The alternating colours on hover add subtle interactive response.
 
 The same table style has been used for admin to view existing products and for users to see their order history. This provides a uniform experience throughout the website.
+
 ![image](https://github.com/user-attachments/assets/e3bdd9f7-4858-4eac-8f23-2194e1a9460b)
 ![image](https://github.com/user-attachments/assets/b13c61d7-a7e3-4dc6-9755-c6ff571ca3e3)
 
 
 To add or remove an item from the cart, two buttons with icons are present. The icons, presumably depicting minus and plus symbols, provide clear and intuitive indications of their respective actions. The button with the plus icon adds one more to the quantity of an existing item in the cart, while the button with the minus icon does the opposite. The use of icons adds a modern and stylish touch to the buttons.
+
 ![image](https://github.com/user-attachments/assets/c5f4e872-c76d-4340-b4fa-3b1c0b8ac1ad)
 
 
 When the above buttons are pressed, a confirmation dialog ensures that users are prompted before taking any action, preventing accidental clicks.
+
 ![image](https://github.com/user-attachments/assets/17a4d98b-0493-4f15-a17e-dac261fed4de)
 
 This user-friendly feature adds an extra layer of protection against unintended item removal or addition.
 
 
 For the user to review the products they have purchased, a very simple form is available in the final column of the order history table. The purpose of this form is to provide a convenient way to submit reviews without navigating to a separate review page.
+
 ![image](https://github.com/user-attachments/assets/a0f470de-17ac-437d-8ebf-27341762d788)
 
 Clear and concise options for ratings 1 to 5 stars can be selected by using a dropdown.
@@ -94,9 +100,11 @@ Clear and concise options for ratings 1 to 5 stars can be selected by using a dr
 A multiline text input for users to provide written reviews. A clearly labelled “Submit Review” button is there to indicate the purpose of the form.
 
 For the admin to edit an existing product, an edit form is structured with the modal, creating a clear separation from the main content, and providing a focused area for editing.
+
 ![image](https://github.com/user-attachments/assets/027d476a-b249-4972-870e-0a535b4043da)
 
 The use of a modal overlay is to ensure that the form captures the admin’s attention while preventing interference with other elements on the page.
+
 ![image](https://github.com/user-attachments/assets/d5a0e1d7-b776-4db8-9f8e-e25886d8bf12)
 
 The use of JavaScript functions for opening and closing the overlay/modal adds a dynamic and interactive aspect to the form.
@@ -105,10 +113,12 @@ The form dynamically populates fields with existing data, allowing the admin to 
 ## Accessibility
 
 - **Readable Fonts and Sizes:** The use of the 'Roboto' font family enhances readability, and font sizes are appropriately set. Clear and legible text is crucial for users with visual impairments or those who may rely on screen readers.
+  
 ![image](https://github.com/user-attachments/assets/8d92d908-66a1-49e6-b4b7-f8786e9c54cc)
 
 
 - **Iconic Representation:** Icons, such as those in the navbar, are visually recognizable and enhance the user interface. This is particularly beneficial for users with cognitive disabilities who might find it easier to navigate through familiar symbols.
+  
 ![image](https://github.com/user-attachments/assets/7948ef9b-642b-43d4-8b38-00b30d834992)
 
 
@@ -182,16 +192,19 @@ Stock information is tracked for each product, ensuring accurate inventory manag
 The layout of the search and filter section is structured and intuitive, making it easy for users to understand and interact with these advanced features.
 The search bar allows users to find products quickly by typing relevant keywords. This feature enhances the overall usability of the website, particularly for users who have specific products in mind.
 Placeholder text in the search bar ("Search for products") and descriptive options. This is especially helpful for those who may require additional guidance.
+
 ![image](https://github.com/user-attachments/assets/f18b9080-6c5a-455c-982f-57c01d7a5fd5)
 
 
 The category filter, presented as a dropdown menu, allows users to narrow down their search by selecting a specific product category.
 This enhances the efficiency of product discovery, making it easier for users to find what they are looking for.
 The select menu for choosing a category is interactive and engages users in a visually pleasing way. This feature is not only functional but also adds an aesthetic touch to the filtering process.
+
 ![image](https://github.com/user-attachments/assets/9d9da38c-cb2c-47d9-9375-2608d08b04b8)
 
 
 The sorting buttons ("Sort by Price (High to Low)" and "Sort by Price (Low to High)") provide users with a dynamic and personalized way to organize product listings based on their preferences. This feature caters to diverse user needs and preferences.
+
 ![image](https://github.com/user-attachments/assets/181f06a6-3baa-4bd1-a3b1-1c40b5894476)
 
 
