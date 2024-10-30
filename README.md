@@ -123,12 +123,15 @@ The form dynamically populates fields with existing data, allowing the admin to 
 
 
 - **Inclusive Image Descriptions:** Images are accompanied by descriptive alt text. This is vital for users with visual impairments who rely on screen readers to understand the content of images.
+  
 ![image](https://github.com/user-attachments/assets/5b093646-c90f-45b1-a5a3-966d46b29166)
 
 - **Thoughtful Flash Message Display:** Flash messages are presented in an overlay with attention to aesthetics. The overlay design ensures that users, including those with cognitive or attention-related challenges, can focus on and comprehend important messages.
+  
 ![image](https://github.com/user-attachments/assets/fd232514-6116-41dc-88e7-e64bb2a7904f)
 
 - **Intuitive Navigation:** The layout and organization of navigation elements contribute to an intuitive user experience. Clear navigation is essential for users with cognitive disabilities or those who may face challenges in understanding complex structures.
+  
 ![image](https://github.com/user-attachments/assets/fa49aa99-5cd0-4202-85e7-be8c217ce83c)
 
 
