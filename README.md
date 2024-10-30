@@ -30,6 +30,7 @@ The subtle scaling effect on hover adds an interactive dimension, providing visu
 ![image](https://github.com/user-attachments/assets/2ea65cbc-bafa-4133-840c-2679ce1743fd)
 
 The use of flex box in the product container allows for a responsive layout, adapting to different screen sizes. Similar product containers are applied on the product page with slight modifications.
+
 ![image](https://github.com/user-attachments/assets/1e420f3a-c50e-44bd-ac76-204b096a51af)
 
 
@@ -40,11 +41,14 @@ If the product is out of stock, the button has a muted background colour of `#cc
 ![image](https://github.com/user-attachments/assets/cff09f23-0393-4cf9-b1d9-0e40790f276a)
 
 The colour choice effectively communicates that the button is inactive. The cursor style `not-allowed` visually presents that the button is not interactive. This is a standard convention for disabled elements on most websites.
-![image](https://github.com/user-attachments/assets/df1ede6f-9639-46d8-9fac-04ccbb47feb1) ![image](https://github.com/user-attachments/assets/a767d07c-1372-44d6-9594-d6e63244f563)
+
+![image](https://github.com/user-attachments/assets/df1ede6f-9639-46d8-9fac-04ccbb47feb1)
+![image](https://github.com/user-attachments/assets/a767d07c-1372-44d6-9594-d6e63244f563)
 
 
 
 Both the forms for login and registration are kept quite simple and straightforward for the ease of the user. They only require the user to input essential details that would be required to login or register.
+
 ![image](https://github.com/user-attachments/assets/7e2d6626-747c-423f-aacb-ede6ba30fc32)
 ![image](https://github.com/user-attachments/assets/c484bd8b-9204-4aa5-813d-d1504261bb62)
 
