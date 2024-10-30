@@ -68,3 +68,4 @@ The database includes tables for `User`, `Product`, `Stock`, `Order`, `OrderItem
 
 ## Bibliography
 All images sourced from [Allrounder Cricket](https://www.allroundercricket.com/).
+![image](https://github.com/user-attachments/assets/e183c2f4-c91f-4718-a91c-6c5e2afe8e9b)
