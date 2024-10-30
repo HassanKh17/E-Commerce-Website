@@ -131,22 +131,41 @@ Following are the Many-to-Many relationships in my database:
 - **Product and Stock:**
   - Each product can have multiple stock entries (`Product.stock`).
   - Each stock entry is associated with a single product (`Stock.product`).
+![image](https://github.com/user-attachments/assets/65c1f4b5-5e77-4d03-b820-2d78a18796e6)
+![image](https://github.com/user-attachments/assets/3887daa7-88d8-46f8-a6c4-4ff181bd4e2a)
+
 
 - **Product and OrderItem:**
   - Each product can be included in multiple order items (`Product.order_items`).
   - Each order item is associated with a single product (`OrderItem.product`).
+![image](https://github.com/user-attachments/assets/ba3068fd-8f4d-4dd2-9ec7-0eb4aed3434f)
+![image](https://github.com/user-attachments/assets/31c6074a-4f61-4078-86b7-6b0d60ec3312)
+
+
 
 - **User and Review:**
   - Each user can write multiple reviews (`User.reviews`).
   - Each review is associated with a single user (`Review.user`).
+![image](https://github.com/user-attachments/assets/a5607cf3-91cd-4b52-93db-c4df508121fa)
+![image](https://github.com/user-attachments/assets/bc100e00-e276-401a-99c6-3bd938479635)
+
+
 
 - **Product and Review:**
   - Each product can have multiple reviews (`Product.reviews`).
   - Each review is associated with a single product (`Review.product`).
+![image](https://github.com/user-attachments/assets/a4ee9cab-228d-4ec4-a9ea-cef2a5740df1)
+![image](https://github.com/user-attachments/assets/d95a6c8a-ca70-4e6c-82ed-cf79c5a2489f)
+
+
 
 - **OrderItem and Review:**
   - Each order item can have multiple reviews (`OrderItem.reviews`).
   - Each review is associated with a single order item (`Review.order_item`).
+![image](https://github.com/user-attachments/assets/c7f7232b-f54e-4b86-850b-dc1f0bf4d5b0)
+![image](https://github.com/user-attachments/assets/9f64a412-d11b-4ddb-a22b-823671b360d4)
+
+
 
 Users can view their order history, as each order is linked to a specific user. This enhances the user experience by providing a comprehensive record of their purchases.
 
@@ -157,11 +176,17 @@ Stock information is tracked for each product, ensuring accurate inventory manag
 The layout of the search and filter section is structured and intuitive, making it easy for users to understand and interact with these advanced features.
 The search bar allows users to find products quickly by typing relevant keywords. This feature enhances the overall usability of the website, particularly for users who have specific products in mind.
 Placeholder text in the search bar ("Search for products") and descriptive options. This is especially helpful for those who may require additional guidance.
+![image](https://github.com/user-attachments/assets/f18b9080-6c5a-455c-982f-57c01d7a5fd5)
+
 
 The category filter, presented as a dropdown menu, allows users to narrow down their search by selecting a specific product category.
 This enhances the efficiency of product discovery, making it easier for users to find what they are looking for.
 The select menu for choosing a category is interactive and engages users in a visually pleasing way. This feature is not only functional but also adds an aesthetic touch to the filtering process.
+![image](https://github.com/user-attachments/assets/9d9da38c-cb2c-47d9-9375-2608d08b04b8)
+
 
 The sorting buttons ("Sort by Price (High to Low)" and "Sort by Price (Low to High)") provide users with a dynamic and personalized way to organize product listings based on their preferences. This feature caters to diverse user needs and preferences.
+![image](https://github.com/user-attachments/assets/181f06a6-3baa-4bd1-a3b1-1c40b5894476)
+
 
 The use of JavaScript functions (`sortProducts` and `filterProductsByCategory`) indicates real-time updates and a seamless user experience without the need for page reloads. This contributes to a more interactive and modern feel.
