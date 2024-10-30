@@ -220,9 +220,9 @@ The sorting buttons ("Sort by Price (High to Low)" and "Sort by Price (Low to Hi
 
 The use of JavaScript functions (`sortProducts` and `filterProductsByCategory`) indicates real-time updates and a seamless user experience without the need for page reloads. This contributes to a more interactive and modern feel.
 
-## Critical Analysis 
+# Critical Analysis 
 
-# What Went Well 
+### What Went Well 
 Real-time updates and feedback mechanisms, such as immediate page content refresh 
 upon sorting, searching, or filtering by category were implemented in an effective 
 manner. The seamless integration of backend functionality with frontend features is a 
@@ -230,13 +230,13 @@ particular thing I am proud of. The AJAX requests for search and sorting contrib
 more dynamic and responsive user interface without requiring full page reloads. All of 
 this just not only added to the functionality of the website, but also enhanced the overall 
 user experience.  
-# What Went Badly 
+### What Went Badly 
 Implementation of responsive website was very challenging. The issue being the not 
 having a mobile-first approach, where the layout and functionality is initially designed 
 for phone devices and then progressively enhanced for larger screens. 
 The use of fixed units for layout dimensions also added to the problem as it can result in 
 elements being too large or two small on different screens. 
-# Improvements 
+### Improvements 
 I would focus more on accessibility enhancements. The plan to achieve this would be by 
 conduct a thorough accessibility audit to ensure the website complies with WCAG 
 standards. Addressing any issues related to colour contrast, text legibility, and screen 
