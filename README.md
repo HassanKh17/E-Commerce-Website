@@ -1,7 +1,5 @@
 # HK Store
 
-**Hassan Khawaja Ahmed Roohi**
-
 [My Website](https://hassankh17.pythonanywhere.com/)
 
 HK Store is a specialized e-commerce platform for cricket goods, designed to offer users an easy browsing and checkout experience. Admins have access to a dedicated interface for adding, updating, and managing products to maintain a seamless online experience for cricket enthusiasts.
