@@ -9,7 +9,8 @@ For a complete walkthrough of the user experience, please refer to the [video de
 
 ## Design
 - **Modern Aesthetic**: Clean, contemporary design with a color scheme that adheres to WCGA AA standards.
-  ![Homepage Design](images/homepage_design.png)
+  ![Homepage Design](![image](https://github.com/user-attachments/assets/dc62ddbb-cdc4-45e3-a183-505d19e2c836)
+)
 
 - **Navigation & Icon Placement**: Key navigation elements are placed at the top, ensuring immediate visibility and intuitive access for users.
   ![Navigation Bar](images/navigation_bar.png)
