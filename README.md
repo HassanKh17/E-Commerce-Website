@@ -1,8 +1,7 @@
 # My Website
 HK Store is an e-commerce platform specialised in cricket goods, enabling users to easily browse and checkout. Admins have an interface to effortlessly add, update, and manage cricket products, ensuring a seamless online experience for cricket enthusiasts.
+[Watch the User Guide Video]([https://github.com/your-username/repo-name/issues/issue-number#video-url](https://youtu.be/BiKAKeQlqHo))
 
-## User Path
-https://leeds365-my.sharepoint.com/:v:/g/personal/sc22hkar_leeds_ac_uk/EVsQlcKRkz9JsCGJqc-T_ZcBXtW__B_MjdXJxHaMHg8VFw?e=ob2KAz
 
 ## Design
 The website boasts a contemporary aesthetic with a clean and modern design. The colour scheme, featuring `#f5f5f5` for the background and `#333` for the navigation bar has a contrast ratio of approximately 4.49:1 which meets the WCGA AA standards for normal text.
