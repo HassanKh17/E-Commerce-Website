@@ -9,27 +9,36 @@ For a complete walkthrough of the user experience, please refer to the [video de
 
 ## Design
 - **Modern Aesthetic**: Clean, contemporary design with a color scheme that adheres to WCGA AA standards.
-  ![Homepage Design](![image](https://github.com/user-attachments/assets/dc62ddbb-cdc4-45e3-a183-505d19e2c836)
-)
+![image](https://github.com/user-attachments/assets/2c8921e6-db0e-48c8-8efd-c2638bee4192)
+
+
 
 - **Navigation & Icon Placement**: Key navigation elements are placed at the top, ensuring immediate visibility and intuitive access for users.
-  ![Navigation Bar](images/navigation_bar.png)
+![image](https://github.com/user-attachments/assets/953c342e-9798-4a53-9490-a11bac78fc08)
+
 
 - **Dynamic Banner**: The marquee banner draws attention and adds a dynamic visual.
-  ![Dynamic Banner](images/dynamic_banner.png)
+![image](https://github.com/user-attachments/assets/59307065-e473-4002-b3a6-8a38934122ce)
+![image](https://github.com/user-attachments/assets/9f7d1011-13b0-42f4-99dd-2c764848e278)
+  
+
 
 - **Product Cards**: Essential product details, hover effects, and a responsive design for a cohesive look.
-  ![Product Cards](images/product_cards.png)
+![image](https://github.com/user-attachments/assets/81bbf83f-53a6-4abc-8cc6-6f6553d524c4)
+
 
 ### Interactivity
 - **Stock Button Colors**: Button colors vary based on stock level, with interactive transitions.
-  ![Stock Buttons](images/stock_buttons.png)
+![image](https://github.com/user-attachments/assets/455daf78-1e61-4143-a19e-9a4b2b5cf8a4)
+
 
 - **Forms**: Login and registration forms are designed for simplicity, with a clean aesthetic.
-  ![Login Form](images/login_form.png)
+![image](https://github.com/user-attachments/assets/80a919ce-a6bc-4aae-b715-d63d610a18bf)
+
 
 - **Cart Management**: Plus and minus buttons for managing cart quantities, with a confirmation dialog for actions.
-  ![Cart Management](images/cart_management.png)
+  ![Cart Management](images/cart_management.png) ![image](https://github.com/user-attachments/assets/631678fa-4c19-4e4e-8a67-c06ab37f4965)
+
 
 ## Accessibility
 - **Readable Fonts**: 'Roboto' font ensures clarity, with appropriately sized text.
@@ -68,4 +77,4 @@ The database includes tables for `User`, `Product`, `Stock`, `Order`, `OrderItem
 
 ## Bibliography
 All images sourced from [Allrounder Cricket](https://www.allroundercricket.com/).
-![image](https://github.com/user-attachments/assets/e183c2f4-c91f-4718-a91c-6c5e2afe8e9b)
+
