@@ -11,14 +11,26 @@ For a complete walkthrough of the user experience, please refer to the [video de
 
 ## Design
 - **Modern Aesthetic**: Clean, contemporary design with a color scheme that adheres to WCGA AA standards.
+  ![Homepage Design](images/homepage_design.png)
+
 - **Navigation & Icon Placement**: Key navigation elements are placed at the top, ensuring immediate visibility and intuitive access for users.
+  ![Navigation Bar](images/navigation_bar.png)
+
 - **Dynamic Banner**: The marquee banner draws attention and adds a dynamic visual.
+  ![Dynamic Banner](images/dynamic_banner.png)
+
 - **Product Cards**: Essential product details, hover effects, and a responsive design for a cohesive look.
+  ![Product Cards](images/product_cards.png)
 
 ### Interactivity
 - **Stock Button Colors**: Button colors vary based on stock level, with interactive transitions.
+  ![Stock Buttons](images/stock_buttons.png)
+
 - **Forms**: Login and registration forms are designed for simplicity, with a clean aesthetic.
+  ![Login Form](images/login_form.png)
+
 - **Cart Management**: Plus and minus buttons for managing cart quantities, with a confirmation dialog for actions.
+  ![Cart Management](images/cart_management.png)
 
 ## Accessibility
 - **Readable Fonts**: 'Roboto' font ensures clarity, with appropriately sized text.
@@ -30,11 +42,17 @@ The database includes tables for `User`, `Product`, `Stock`, `Order`, `OrderItem
 - **User & Order**: Each user can have multiple orders.
 - **Product & Stock**: Each product can have multiple stock entries.
 - **User & Review**: Each user can leave multiple reviews for products they’ve purchased.
-
+  
 ## Advanced Feature: Search & Filter
 - **Search Bar**: Allows users to find products quickly by typing keywords.
+  ![Search Bar](images/search_bar.png)
+
 - **Category Filter**: Dropdown menu for narrowing down product categories.
+  ![Category Filter](images/category_filter.png)
+
 - **Sorting Options**: Buttons for price sorting, providing a personalized product listing experience.
+  ![Sorting Options](images/sorting_options.png)
+
 - **Real-Time Updates**: JavaScript functions for dynamic filtering and sorting.
 
 ## Testing & Critical Analysis
