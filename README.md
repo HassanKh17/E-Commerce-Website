@@ -45,7 +45,8 @@ The colour choice effectively communicates that the button is inactive. The curs
 
 
 Both the forms for login and registration are kept quite simple and straightforward for the ease of the user. They only require the user to input essential details that would be required to login or register.
-![image](https://github.com/user-attachments/assets/7e2d6626-747c-423f-aacb-ede6ba30fc32) ![image](https://github.com/user-attachments/assets/c484bd8b-9204-4aa5-813d-d1504261bb62)
+![image](https://github.com/user-attachments/assets/7e2d6626-747c-423f-aacb-ede6ba30fc32)
+![image](https://github.com/user-attachments/assets/c484bd8b-9204-4aa5-813d-d1504261bb62)
 
 
 The choice of white background for the form creates a clean and modern appearance, providing a neutral canvas for other elements.
@@ -53,7 +54,8 @@ The form’s rounded corners soften its edges, contributing to a more inviting a
 To keep the forms responsive, percentage-based width and margin properties are used.
 
 In the top left corner of each navbar, there is a profile icon with text next to it. If the user hasn’t logged in, it displays “Guest”. When a user logs in, it is replaced by the username of the user. This lets the user know if they have logged in or not and establishes a sense of identity and acknowledgement.
-![image](https://github.com/user-attachments/assets/702fb9f9-8cfa-4f47-997c-ebc6dbde85ba) ![image](https://github.com/user-attachments/assets/30a8a4da-6770-4a9b-9532-30c66bce3b69)
+![image](https://github.com/user-attachments/assets/702fb9f9-8cfa-4f47-997c-ebc6dbde85ba) 
+![image](https://github.com/user-attachments/assets/30a8a4da-6770-4a9b-9532-30c66bce3b69)
 
 
 
