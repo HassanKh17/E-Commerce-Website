@@ -1,6 +1,8 @@
 # My Website
 HK Store is an e-commerce platform specialised in cricket goods, enabling users to easily browse and checkout. Admins have an interface to effortlessly add, update, and manage cricket products, ensuring a seamless online experience for cricket enthusiasts.
-[Watch the User Guide Video]([https://github.com/your-username/repo-name/issues/issue-number#video-url](https://youtu.be/BiKAKeQlqHo))
+
+[![Watch the video](https://img.youtube.com/vi/BiKAKeQlqHo/maxresdefault.jpg)](https://youtu.be/BiKAKeQlqHo)
+
 
 
 ## Design
