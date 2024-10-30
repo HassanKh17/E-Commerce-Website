@@ -32,6 +32,7 @@ The product cards maintain a consistent design, contributing to cohesive and pro
 
 
 The subtle scaling effect on hover adds an interactive dimension, providing visual feedback to users when interacting with product cards.
+
 ![image](https://github.com/user-attachments/assets/2ea65cbc-bafa-4133-840c-2679ce1743fd)
 
 The use of flex box in the product container allows for a responsive layout, adapting to different screen sizes. Similar product containers are applied on the product page with slight modifications.
